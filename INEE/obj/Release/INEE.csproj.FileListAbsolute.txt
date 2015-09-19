@@ -1,0 +1,6 @@
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\INEE\bin\INEE.dll.config
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\INEE\bin\INEE.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\INEE\bin\INEE.pdb
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\INEE\obj\Release\INEE.csprojResolveAssemblyReference.cache
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\INEE\obj\Release\INEE.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\INEE\obj\Release\INEE.pdb

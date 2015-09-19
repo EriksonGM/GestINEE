@@ -1,0 +1,42 @@
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\Deposit\Pic\anonimo.jpg
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\GestINEE.dll.config
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\GestINEE.dll
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\GestINEE.pdb
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\WebMatrix.Data.dll
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\WebMatrix.WebData.dll
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\WebMatrix.Data.xml
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\WebMatrix.WebData.xml
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\es\WebMatrix.Data.resources.dll
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\bin\es\WebMatrix.WebData.resources.dll
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\obj\GearHost\GestINEE.dll
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\obj\GearHost\GestINEE.pdb
+C:\Users\Erikson\Desktop\GestINEE\GestINEE\obj\GearHost\GestINEE.csprojResolveAssemblyReference.cache
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\Deposit\Pic\anonimo.jpg
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\assets\font-awesome-4.3.0\fonts\fontawesome-webfont.woff2
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\GestINEE.dll.config
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\GestINEE.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\GestINEE.pdb
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\Microsoft.Web.Helpers.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.Helpers.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.Razor.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.WebPages.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.WebPages.Razor.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\WebMatrix.Data.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\WebMatrix.WebData.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\DotNet.Highcharts.pdb
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\DotNet.Highcharts.xml
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.Helpers.xml
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.Razor.xml
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.WebPages.xml
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\System.Web.WebPages.Razor.xml
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\WebMatrix.Data.xml
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\WebMatrix.WebData.xml
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\obj\GearHost\GestINEE.csprojResolveAssemblyReference.cache
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\obj\GearHost\GestINEE.dll
+C:\Users\Erikson Gomes\Google Drive\Hedging Consult\GestINEE\GestINEE\obj\GearHost\GestINEE.pdb

@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcVdNqXNeV0aE6EpfVEzZygAAAAACAAAAAAAQZgAAAAEAACAAAACj4QD+qN6B0BgwcZ1Mwv7uDNj/lJpV2iDynO3GVILg7AAAAAAOgAAAAAIAACAAAABVU6vUHzUSu5hdtJWOMgVxgyYRMn2SqzqgdpJ6h4gCPoAAAAC+Ff9FlGZ0mwAqpC2l025f3pmyPYKsGySN8RXUKknIb8y28vCK67tpGZXVyhFbedZ4Bawrp10JHYbJSa0f3pVPYviK+8CGoJHAs6nDuB8HCIA+y7BmKowRNuh8hXjdUaT3ImstjmmqBCS6kSWqwADe19QyC2FLmJx9SNqGqqA6BEAAAACSJFrRXYkKg+1AV4mtM3JhxtFKugs/Q59KAqj6xwY/PYCYVKaIJO5K8eweQCKZ1LZSI0tYjdRq0jfhsOY2z87r</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.gear.host</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admin/CrearUsuario.aspx">
+      <publishTime>04/13/2015 14:52:39</publishTime>
+    </File>
+    <File Include="Admin/GerirUsuarios.aspx">
+      <publishTime>04/17/2015 03:43:40</publishTime>
+    </File>
+    <File Include="Admin/GestaoDeficiencias.aspx">
+      <publishTime>04/13/2015 15:04:15</publishTime>
+    </File>
+    <File Include="Admin/GestaoEquipamentos.aspx">
+      <publishTime>04/13/2015 14:56:31</publishTime>
+    </File>
+    <File Include="Admin/VisualizarRegisto.aspx">
+      <publishTime>04/13/2015 15:05:11</publishTime>
+    </File>
+    <File Include="Admin/Web.config">
+      <publishTime>04/13/2015 03:03:21</publishTime>
+    </File>
+    <File Include="app.config">
+      <publishTime>04/24/2015 03:26:19</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap.css">
+      <publishTime>04/17/2015 16:02:19</publishTime>
+    </File>
+    <File Include="assets/css/custom.css">
+      <publishTime>04/13/2015 14:50:25</publishTime>
+    </File>
+    <File Include="assets/css/font-awesome.css">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/css/jquery.Jcrop.css">
+      <publishTime>04/17/2015 01:30:47</publishTime>
+    </File>
+    <File Include="assets/css/jquery.Jcrop.min.css">
+      <publishTime>04/17/2015 01:30:47</publishTime>
+    </File>
+    <File Include="assets/css/SourceSansPro-Regular.ttf">
+      <publishTime>04/11/2015 15:56:08</publishTime>
+    </File>
+    <File Include="assets/font-awesome/fonts/fontawesome-webfontba72.eot">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/font-awesome/fonts/fontawesome-webfontba72.svg">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/font-awesome/fonts/fontawesome-webfontba72.ttf">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/font-awesome/fonts/fontawesome-webfontba72.woff">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/font-awesome/fonts/fontawesome-webfontd41d.eot">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regulard41d.eot">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/img/ao.png">
+      <publishTime>04/11/2015 18:12:40</publishTime>
+    </File>
+    <File Include="assets/img/favicon.ico">
+      <publishTime>04/11/2015 18:02:54</publishTime>
+    </File>
+    <File Include="assets/img/find_user.png">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/img/INEE.png">
+      <publishTime>04/11/2015 18:03:04</publishTime>
+    </File>
+    <File Include="assets/img/Republica.jpg">
+      <publishTime>04/11/2015 18:12:55</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap.min.js">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/js/custom.js">
+      <publishTime>04/12/2015 01:27:28</publishTime>
+    </File>
+    <File Include="assets/js/dataTables/dataTables.bootstrap.css">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/js/dataTables/dataTables.bootstrap.js">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/js/dataTables/jquery.dataTables.js">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/js/html2canvas.js">
+      <publishTime>04/16/2015 17:36:38</publishTime>
+    </File>
+    <File Include="assets/js/jquery-1.10.2.js">
+      <publishTime>04/11/2015 15:44:00</publishTime>
+    </File>
+    <File Include="assets/js/jquery.color.js">
+      <publishTime>04/17/2015 01:22:56</publishTime>
+    </File>
+    <File Include="assets/js/jquery.Jcrop.js">
+      <publishTime>04/17/2015 01:22:56</publishTime>
+    </File>
+    <File Include="assets/js/jquery.Jcrop.min.js">
+      <publishTime>04/17/2015 01:22:56</publishTime>
+    </File>
+    <File Include="assets/js/jquery.metisMenu.js">
+      <publishTime>04/11/2015 15:44:01</publishTime>
+    </File>
+    <File Include="assets/js/jquery.min.js">
+      <publishTime>04/17/2015 01:22:56</publishTime>
+    </File>
+    <File Include="assets/js/jquery.printElement.min.js">
+      <publishTime>04/16/2015 17:54:02</publishTime>
+    </File>
+    <File Include="assets/js/modernizr-2.6.2.min.js">
+      <publishTime>04/11/2015 22:09:17</publishTime>
+    </File>
+    <File Include="assets/js/morris/morris-0.4.3.min.css">
+      <publishTime>04/11/2015 15:44:01</publishTime>
+    </File>
+    <File Include="assets/js/morris/morris.js">
+      <publishTime>04/11/2015 15:44:01</publishTime>
+    </File>
+    <File Include="assets/js/morris/raphael-2.1.0.min.js">
+      <publishTime>04/11/2015 15:44:01</publishTime>
+    </File>
+    <File Include="bin/Deposit/Pic/anonimo.jpg">
+      <publishTime>04/13/2015 16:37:07</publishTime>
+    </File>
+    <File Include="bin/es/WebMatrix.Data.resources.dll">
+      <publishTime>07/09/2013 19:35:42</publishTime>
+    </File>
+    <File Include="bin/es/WebMatrix.WebData.resources.dll">
+      <publishTime>07/09/2013 19:35:48</publishTime>
+    </File>
+    <File Include="bin/GestINEE.dll">
+      <publishTime>04/24/2015 04:09:19</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.Data.dll">
+      <publishTime>07/09/2013 19:05:10</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.WebData.dll">
+      <publishTime>07/09/2013 19:05:12</publishTime>
+    </File>
+    <File Include="Cadastros/CadastrarEstudante.aspx">
+      <publishTime>04/13/2015 03:47:57</publishTime>
+    </File>
+    <File Include="Cadastros/CadastrarFuncionario.aspx">
+      <publishTime>04/13/2015 20:23:32</publishTime>
+    </File>
+    <File Include="Cadastros/CompletarFuncionario.aspx">
+      <publishTime>04/20/2015 02:57:30</publishTime>
+    </File>
+    <File Include="Cadastros/Web.config">
+      <publishTime>04/13/2015 07:43:24</publishTime>
+    </File>
+    <File Include="Deposit/Back.png">
+      <publishTime>04/16/2015 19:37:07</publishTime>
+    </File>
+    <File Include="Deposit/Est.png">
+      <publishTime>04/17/2015 00:00:13</publishTime>
+    </File>
+    <File Include="Deposit/Fondo.jpg">
+      <publishTime>04/16/2015 19:47:53</publishTime>
+    </File>
+    <File Include="Deposit/FondoOriginal.png">
+      <publishTime>04/16/2015 17:15:26</publishTime>
+    </File>
+    <File Include="Deposit/Pic/anonimo.jpg">
+      <publishTime>04/13/2015 16:37:07</publishTime>
+    </File>
+    <File Include="Deposit/Web.config">
+      <publishTime>04/13/2015 15:30:45</publishTime>
+    </File>
+    <File Include="Editor/Web.config">
+      <publishTime>04/12/2015 19:59:37</publishTime>
+    </File>
+    <File Include="Estatisticas/Web.config">
+      <publishTime>04/12/2015 19:59:20</publishTime>
+    </File>
+    <File Include="Formacoes/Web.config">
+      <publishTime>04/12/2015 20:00:29</publishTime>
+    </File>
+    <File Include="Funcionario/Funcionario.aspx">
+      <publishTime>04/20/2015 01:41:41</publishTime>
+    </File>
+    <File Include="Funcionario/Web.config">
+      <publishTime>04/17/2015 03:34:56</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/11/2015 23:47:55</publishTime>
+    </File>
+    <File Include="Inicio.aspx">
+      <publishTime>04/21/2015 19:12:30</publishTime>
+    </File>
+    <File Include="LayOut.Master">
+      <publishTime>04/23/2015 02:28:21</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>04/15/2015 03:08:54</publishTime>
+    </File>
+    <File Include="Patrimonio/CadastrarEquipamento.aspx">
+      <publishTime>04/21/2015 02:51:43</publishTime>
+    </File>
+    <File Include="Patrimonio/CadastrarEscola.aspx">
+      <publishTime>04/23/2015 02:02:59</publishTime>
+    </File>
+    <File Include="Patrimonio/CadastrarInstituicao.aspx">
+      <publishTime>04/17/2015 14:11:13</publishTime>
+    </File>
+    <File Include="Patrimonio/Equipamento.aspx">
+      <publishTime>04/22/2015 20:42:19</publishTime>
+    </File>
+    <File Include="Patrimonio/Escola.aspx">
+      <publishTime>04/24/2015 02:56:25</publishTime>
+    </File>
+    <File Include="Patrimonio/Instituicao.aspx">
+      <publishTime>04/23/2015 02:27:07</publishTime>
+    </File>
+    <File Include="Patrimonio/ListaEquipamentos.aspx">
+      <publishTime>04/22/2015 03:02:44</publishTime>
+    </File>
+    <File Include="Patrimonio/ListaEscolas.aspx">
+      <publishTime>04/24/2015 03:46:47</publishTime>
+    </File>
+    <File Include="Patrimonio/ListaInstituicoes.aspx">
+      <publishTime>04/22/2015 20:39:19</publishTime>
+    </File>
+    <File Include="Patrimonio/Web.config">
+      <publishTime>04/12/2015 20:00:47</publishTime>
+    </File>
+    <File Include="Teste.aspx">
+      <publishTime>04/23/2015 04:14:40</publishTime>
+    </File>
+    <File Include="User/Web.config">
+      <publishTime>04/17/2015 00:16:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/24/2015 04:09:29</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

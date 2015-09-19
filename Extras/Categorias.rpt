@@ -1,0 +1,54 @@
+﻿Id_Laboral  Id_TipoLaboral Id_GrupoPessoal Categoria
+----------- -------------- --------------- ----------------------------------------------------------------------------------------------------
+1           1              1               Director(a) Geral
+2           1              1               Director(a) Geral Adjunto(a) 
+3           1              1               Chefes de Departamento 
+4           1              3               Especialista Principal 
+5           1              3               Especialista de 1ª Classe
+6           1              3               Especialista de 2ª Classe
+7           1              3               Técnico de 1ª Classe 
+8           1              3               Técnico de 2ª Classe 
+9           1              3               Técnico de 3ª Classe 
+10          1              4               Técnico Médio Príncipal de 1ª Classe 
+11          1              4               Técnico Médio Príncipal de 2ª Classe 
+12          1              4               Técnico Médio Príncipal de 3ª Classe 
+13          1              4               Técnico Médio de 1ª Classe 
+14          1              4               Técnico Médio de 2ª Classe 
+15          1              4               Técnico Médio de 3ª Classe 
+16          1              2               Assessor Principal 
+17          1              2               Primeiro Assessor
+18          1              2               Assessor
+19          1              2               Técnico Superior Principal
+20          1              2               Técnico Superior 1ª Classe
+21          1              2               Técnico Superior 2ª Classe
+22          1              5               Oficial Administrativo Principal
+23          1              5               Primeiro Oficial
+24          1              5               Segundo Oficial
+25          1              5               Terceiro Oficial
+26          1              5               Aspirante
+27          1              5               Escrituário-Dactilógrafo
+28          1              5               Motorista de Ligeiros Profissional
+29          1              6               Auxiliar Administrativo Principal
+30          1              6               Auxiliar de Limpeza Principal
+31          2              7               Investigador Principal
+32          2              7               Investigador Auxiliar
+33          2              7               Investigador Coordenador
+34          2              7               Assistente de Investigação
+35          2              7               Estagiário de Investigação
+36          2              9               Prof. I Ciclo EnsinoSec. Diplomado 1º Escalão
+37          2              9               Prof. I Ciclo EnsinoSec. Diplomado 2º Escalão
+38          2              9               Prof. I Ciclo EnsinoSec. Diplomado 3º Escalão
+39          2              9               Prof. I Ciclo EnsinoSec. Diplomado 4º Escalão
+40          2              9               Prof. I Ciclo EnsinoSec. Diplomado 5º Escalão
+41          2              9               Prof. I Ciclo EnsinoSec. Diplomado 6º Escalão
+42          2              8               Prof. II Ciclo EnsinoSec. Diplomado 1º Escalão
+43          2              8               Prof. II Ciclo EnsinoSec. Diplomado 2º Escalão
+44          2              8               Prof. II Ciclo EnsinoSec. Diplomado 3º Escalão
+45          2              8               Prof. II Ciclo EnsinoSec. Diplomado 4º Escalão
+46          2              8               Prof. II Ciclo EnsinoSec. Diplomado 5º Escalão
+47          2              8               Prof. II Ciclo EnsinoSec. Diplomado 6º Escalão
+48          2              8               Prof. II Ciclo EnsinoSec. Diplomado 7º Escalão
+49          2              8               Prof. II Ciclo EnsinoSec. Diplomado 8º Escalão
+
+(49 row(s) affected)
+

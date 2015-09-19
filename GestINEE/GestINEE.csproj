@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85C1F82F-51A8-4A49-93D7-BC5110F6E852}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestINEE</RootNamespace>
+    <AssemblyName>GestINEE</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="Conn-Implementación" Order="1">
+          <Destination Path="" />
+          <Object Type="DbFullSql" Enabled="False">
+            <PreSource Path="Data Source=HP-ENVY\SQLSERVER%3bInitial Catalog=DBGestINEE%3bUser ID=sa%3bPassword=qwerty123#" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Debug\AutoScripts\Conn-Implementación_SchemaOnly.sql" Transacted="True" />
+          </Object>
+          <Object Type="DbFullSql">
+            <Source Path="..\SQL\GestINEE Database.sql" Transacted="False" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNet.Highcharts">
+      <HintPath>E:\Programas\ASP.Net External Framenworks\DotNet.Highcharts.4.0\DotNet.Highcharts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebHelpers.3.2.3\lib\net45\Microsoft.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.3\lib\net45\WebMatrix.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.3\lib\net45\WebMatrix.WebData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\CrearUsuario.aspx" />
+    <Content Include="Admin\GerirUsuarios.aspx" />
+    <Content Include="Admin\GestaoDeficiencias.aspx" />
+    <Content Include="Admin\GestaoEquipamentos.aspx" />
+    <Content Include="Admin\VisualizarRegisto.aspx" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\fuelux-dev.css" />
+    <Content Include="assets\css\fuelux.css" />
+    <Content Include="assets\css\fuelux.min.css" />
+    <Content Include="assets\css\Jcrop.gif" />
+    <Content Include="assets\css\jquery.Jcrop.css" />
+    <Content Include="assets\css\jquery.Jcrop.min.css" />
+    <Content Include="assets\font-awesome-4.3.0\css\font-awesome.css" />
+    <Content Include="assets\font-awesome-4.3.0\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome-4.3.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="assets\fonts\fuelux.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\img\ao.png" />
+    <Content Include="assets\img\EmployeeCard.jpg" />
+    <Content Include="assets\img\favicon.ico" />
+    <Content Include="assets\img\find_user.png" />
+    <Content Include="assets\img\INEE.png" />
+    <Content Include="assets\img\Republica.jpg" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.css" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.js" />
+    <Content Include="assets\js\dataTables\jquery.dataTables.js" />
+    <Content Include="assets\js\fuelux.js" />
+    <Content Include="assets\js\fuelux.min.js" />
+    <Content Include="assets\js\highcharts.js" />
+    <Content Include="assets\js\html2canvas.js" />
+    <Content Include="assets\js\jquery-1.10.2.js" />
+    <Content Include="assets\js\jquery.color.js" />
+    <Content Include="assets\js\jquery.Jcrop.js" />
+    <Content Include="assets\js\jquery.Jcrop.min.js" />
+    <Content Include="assets\js\jquery.metisMenu.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.printElement.min.js" />
+    <Content Include="assets\js\modernizr-2.6.2.min.js" />
+    <Content Include="assets\js\morris\morris-0.4.3.min.css" />
+    <Content Include="assets\js\morris\morris.js" />
+    <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
+    <Content Include="assets\js\Webcam_Plugin\jquery.webcam.js" />
+    <Content Include="assets\js\Webcam_Plugin\jscam.swf" />
+    <Content Include="assets\js\Webcam_Plugin\jscam_canvas_only.swf" />
+    <Content Include="Cadastros\CadastrarEncarregado.aspx" />
+    <Content Include="Cadastros\CadastrarEstudante.aspx" />
+    <Content Include="Cadastros\CadastrarFuncionario.aspx" />
+    <Content Include="Cadastros\CompletarEncarregado.aspx" />
+    <Content Include="Cadastros\CompletarEstudante.aspx" />
+    <Content Include="Cadastros\CompletarFuncionario.aspx" />
+    <Content Include="Cadastros\PrintFuncionario.aspx" />
+    <Content Include="Deposit\Back.png" />
+    <Content Include="Deposit\Bio\Digital.jpg" />
+    <Content Include="Deposit\Fondo.jpg" />
+    <Content Include="Deposit\FondoOriginal.png" />
+    <Content Include="Deposit\Est.png" />
+    <Content Include="Deposit\Pic\anonimo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Editor\EditorEstudante.aspx" />
+    <Content Include="Editor\ListaEncarregados.aspx" />
+    <Content Include="Editor\ListaEstudantes.aspx" />
+    <Content Include="Editor\ListaFuncionarios.aspx" />
+    <Content Include="Estatisticas\EstatisticasGerais.aspx" />
+    <Content Include="Estatisticas\EstatisticasMunicipais.aspx" />
+    <Content Include="Estatisticas\EstatisticasNacionais.aspx" />
+    <Content Include="Estatisticas\EstatisticasProvincias.aspx" />
+    <Content Include="Formacoes\CrearFormacao.aspx" />
+    <Content Include="Formacoes\Formacao.aspx" />
+    <Content Include="Formacoes\ListarFormacoes.aspx" />
+    <Content Include="Formacoes\Participantes.aspx" />
+    <Content Include="Funcionario\Funcionario.aspx" />
+    <Content Include="Funcionario\ListaFuncionarios.aspx" />
+    <Content Include="Funcionario\NAPA.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Patrimonio\CadastrarEquipamento.aspx" />
+    <Content Include="Patrimonio\CadastrarEscola.aspx" />
+    <Content Include="Patrimonio\CadastrarInstituicao.aspx" />
+    <Content Include="Patrimonio\Equipamento.aspx" />
+    <Content Include="Patrimonio\Escola.aspx" />
+    <Content Include="Patrimonio\Instituicao.aspx" />
+    <Content Include="Patrimonio\ListaEquipamentos.aspx" />
+    <Content Include="Patrimonio\ListaEscolas.aspx" />
+    <Content Include="Patrimonio\ListaInstituicoes.aspx" />
+    <Content Include="Teste1.aspx" />
+    <Content Include="Teste2.aspx" />
+    <Content Include="User\MudarSenha.aspx" />
+    <Content Include="User\Reporte.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\CrearUsuario.aspx.cs">
+      <DependentUpon>CrearUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CrearUsuario.aspx.designer.cs">
+      <DependentUpon>CrearUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GerirUsuarios.aspx.cs">
+      <DependentUpon>GerirUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GerirUsuarios.aspx.designer.cs">
+      <DependentUpon>GerirUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestaoDeficiencias.aspx.cs">
+      <DependentUpon>GestaoDeficiencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestaoDeficiencias.aspx.designer.cs">
+      <DependentUpon>GestaoDeficiencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestaoEquipamentos.aspx.cs">
+      <DependentUpon>GestaoEquipamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestaoEquipamentos.aspx.designer.cs">
+      <DependentUpon>GestaoEquipamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\VisualizarRegisto.aspx.cs">
+      <DependentUpon>VisualizarRegisto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\VisualizarRegisto.aspx.designer.cs">
+      <DependentUpon>VisualizarRegisto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CadastrarEncarregado.aspx.cs">
+      <DependentUpon>CadastrarEncarregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastros\CadastrarEncarregado.aspx.designer.cs">
+      <DependentUpon>CadastrarEncarregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CadastrarEstudante.aspx.cs">
+      <DependentUpon>CadastrarEstudante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastros\CadastrarEstudante.aspx.designer.cs">
+      <DependentUpon>CadastrarEstudante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CadastrarFuncionario.aspx.cs">
+      <DependentUpon>CadastrarFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastros\CadastrarFuncionario.aspx.designer.cs">
+      <DependentUpon>CadastrarFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CompletarEncarregado.aspx.cs">
+      <DependentUpon>CompletarEncarregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastros\CompletarEncarregado.aspx.designer.cs">
+      <DependentUpon>CompletarEncarregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CompletarEstudante.aspx.cs">
+      <DependentUpon>CompletarEstudante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastros\CompletarEstudante.aspx.designer.cs">
+      <DependentUpon>CompletarEstudante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CompletarFuncionario.aspx.cs">
+      <DependentUpon>CompletarFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastros\CompletarFuncionario.aspx.designer.cs">
+      <DependentUpon>CompletarFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\PrintFuncionario.aspx.cs">
+      <DependentUpon>PrintFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastros\PrintFuncionario.aspx.designer.cs">
+      <DependentUpon>PrintFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.cs" />
+    <Compile Include="Editor\EditorEstudante.aspx.cs">
+      <DependentUpon>EditorEstudante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editor\EditorEstudante.aspx.designer.cs">
+      <DependentUpon>EditorEstudante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\ListaEncarregados.aspx.cs">
+      <DependentUpon>ListaEncarregados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editor\ListaEncarregados.aspx.designer.cs">
+      <DependentUpon>ListaEncarregados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\ListaEstudantes.aspx.cs">
+      <DependentUpon>ListaEstudantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editor\ListaEstudantes.aspx.designer.cs">
+      <DependentUpon>ListaEstudantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\ListaFuncionarios.aspx.cs">
+      <DependentUpon>ListaFuncionarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editor\ListaFuncionarios.aspx.designer.cs">
+      <DependentUpon>ListaFuncionarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasGerais.aspx.cs">
+      <DependentUpon>EstatisticasGerais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasGerais.aspx.designer.cs">
+      <DependentUpon>EstatisticasGerais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasMunicipais.aspx.cs">
+      <DependentUpon>EstatisticasMunicipais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasMunicipais.aspx.designer.cs">
+      <DependentUpon>EstatisticasMunicipais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasNacionais.aspx.cs">
+      <DependentUpon>EstatisticasNacionais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasNacionais.aspx.designer.cs">
+      <DependentUpon>EstatisticasNacionais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasProvincias.aspx.cs">
+      <DependentUpon>EstatisticasProvincias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\EstatisticasProvincias.aspx.designer.cs">
+      <DependentUpon>EstatisticasProvincias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formacoes\CrearFormacao.aspx.cs">
+      <DependentUpon>CrearFormacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formacoes\CrearFormacao.aspx.designer.cs">
+      <DependentUpon>CrearFormacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formacoes\Formacao.aspx.cs">
+      <DependentUpon>Formacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formacoes\Formacao.aspx.designer.cs">
+      <DependentUpon>Formacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formacoes\ListarFormacoes.aspx.cs">
+      <DependentUpon>ListarFormacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formacoes\ListarFormacoes.aspx.designer.cs">
+      <DependentUpon>ListarFormacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formacoes\Participantes.aspx.cs">
+      <DependentUpon>Participantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formacoes\Participantes.aspx.designer.cs">
+      <DependentUpon>Participantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\Funcionario.aspx.cs">
+      <DependentUpon>Funcionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funcionario\Funcionario.aspx.designer.cs">
+      <DependentUpon>Funcionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\ListaFuncionarios.aspx.cs">
+      <DependentUpon>ListaFuncionarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funcionario\ListaFuncionarios.aspx.designer.cs">
+      <DependentUpon>ListaFuncionarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\NAPA.aspx.cs">
+      <DependentUpon>NAPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funcionario\NAPA.aspx.designer.cs">
+      <DependentUpon>NAPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LayOut.Master.cs">
+      <DependentUpon>LayOut.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LayOut.Master.designer.cs">
+      <DependentUpon>LayOut.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrimonio\CadastrarEquipamento.aspx.cs">
+      <DependentUpon>CadastrarEquipamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrimonio\CadastrarEquipamento.aspx.designer.cs">
+      <DependentUpon>CadastrarEquipamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrimonio\CadastrarEscola.aspx.cs">
+      <DependentUpon>CadastrarEscola.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrimonio\CadastrarEscola.aspx.designer.cs">
+      <DependentUpon>CadastrarEscola.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrimonio\CadastrarInstituicao.aspx.cs">
+      <DependentUpon>CadastrarInstituicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrimonio\CadastrarInstituicao.aspx.designer.cs">
+      <DependentUpon>CadastrarInstituicao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrimonio\Equipamento.aspx.cs">
+      <DependentUpon>Equipamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrimonio\Equipamento.aspx.designer.cs">
+      <DependentUpon>Equipamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrimonio\Escola.aspx.cs">
+      <DependentUpon>Escola.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrimonio\Escola.aspx.designer.cs">
+      <DependentUpon>Escola.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrimonio\Instituicao.aspx.cs">
+      <DependentUpon>Instituicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrimonio\Instituicao.aspx.designer.cs">
+      <DependentUpon>Instituicao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrimonio\ListaEquipamentos.aspx.cs">
+      <DependentUpon>ListaEquipamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrimonio\ListaEquipamentos.aspx.designer.cs">
+      <DependentUpon>ListaEquipamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrimonio\ListaEscolas.aspx.cs">
+      <DependentUpon>ListaEscolas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrimonio\ListaEscolas.aspx.designer.cs">
+      <DependentUpon>ListaEscolas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrimonio\ListaInstituicoes.aspx.cs">
+      <DependentUpon>ListaInstituicoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrimonio\ListaInstituicoes.aspx.designer.cs">
+      <DependentUpon>ListaInstituicoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teste1.aspx.cs">
+      <DependentUpon>Teste1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste1.aspx.designer.cs">
+      <DependentUpon>Teste1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teste2.aspx.cs">
+      <DependentUpon>Teste2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste2.aspx.designer.cs">
+      <DependentUpon>Teste2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MudarSenha.aspx.cs">
+      <DependentUpon>MudarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MudarSenha.aspx.designer.cs">
+      <DependentUpon>MudarSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="LayOut.Master" />
+    <Content Include="assets\css\SourceSansPro-Regular.ttf" />
+    <Content Include="Admin\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Editor\Web.config" />
+    <Content Include="Estatisticas\Web.config" />
+    <Content Include="Formacoes\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Patrimonio\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Cadastros\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Deposit\Web.config" />
+    <Content Include="User\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Funcionario\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="app.config" />
+    <Content Include="assets\font-awesome-4.3.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome-4.3.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome-4.3.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome-4.3.0\fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\font-awesome-4.3.0\fonts\FontAwesome.otf" />
+    <Content Include="assets\font-awesome-4.3.0\less\animated.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\bordered-pulled.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\core.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\fixed-width.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\font-awesome.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\icons.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\larger.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\list.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\mixins.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\path.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\rotated-flipped.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\stacked.less" />
+    <Content Include="assets\font-awesome-4.3.0\less\variables.less" />
+    <Content Include="assets\font-awesome-4.3.0\scss\font-awesome.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_animated.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_bordered-pulled.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_core.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_fixed-width.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_icons.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_larger.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_list.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_mixins.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_path.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_rotated-flipped.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_stacked.scss" />
+    <Content Include="assets\font-awesome-4.3.0\scss\_variables.scss" />
+    <Content Include="assets\css\fuelux-dev.css.map" />
+    <Content Include="assets\css\fuelux.css.map" />
+    <Content Include="assets\fonts\fuelux.eot" />
+    <Content Include="assets\fonts\fuelux.ttf" />
+    <Content Include="assets\fonts\fuelux.woff" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\GearHost.pubxml" />
+    <None Include="Properties\PublishProfiles\gestinee.somee.com.pubxml" />
+    <None Include="Properties\PublishProfiles\GestINEEServer.pubxml" />
+    <None Include="Properties\PublishProfiles\WServer2012.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Deposit\Doc\" />
+    <Folder Include="TEMP\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'GearHost|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>assets\img\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>31266</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:31266/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(VisualStudioVersion)' == ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(VisualStudioVersion)' != ''" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
